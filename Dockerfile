@@ -5,6 +5,7 @@ WORKDIR /app
 COPY . .
 RUN cargo build --release
 
+# Final run stage
 FROM debian:bookworm-slim AS runner
 
 WORKDIR /app
