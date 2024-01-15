@@ -26,3 +26,4 @@ jobs:
           git-builder: "docker"
           service-ports: "8000:http"
           service-routes: "/:8000"
+          skip-cache: true
