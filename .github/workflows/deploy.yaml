@@ -28,3 +28,4 @@ jobs:
           service-routes: "/:8000"
           skip-cache: true
           service-regions: "was"
+          service-instance-type: "free"
