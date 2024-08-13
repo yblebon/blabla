@@ -3,6 +3,8 @@ FROM rust:bookworm AS builder
 
 WORKDIR /app
 COPY . .
+RUN cargo --version
+RUN rustc --version
 RUN cargo build --release
 
 # Final run stage
